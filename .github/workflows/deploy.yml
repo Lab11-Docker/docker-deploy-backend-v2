@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
+      - camt/se234/deployment/service/GradeServicelmpl
   pull_request:
     branches:
       - main
+      - camt/se234/deployment/service/GradeServicelmpl
 
 jobs:
   build:
