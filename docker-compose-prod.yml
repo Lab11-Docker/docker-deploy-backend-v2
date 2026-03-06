@@ -1,6 +1,6 @@
 services:
   backend:
-    image: amony550/234-deploylab-backend:latest
+    image: amony550/234-deploylab-backend:new
     pull_policy: always
     ports:
       - "8083:8080"
