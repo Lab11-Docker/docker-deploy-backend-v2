@@ -3,7 +3,7 @@ name: Deploy Application to Server
 on:
   push:
     branches:
-      - main
+      - camt/se234/deployment/service/GradeServicelmpl
   pull_request:
     branches:
       - main
@@ -30,7 +30,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/234-deploylab-backend:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/234-deploylab-backend:new
 
       - name: Copy file via ssh password
         uses: appleboy/scp-action@v1
